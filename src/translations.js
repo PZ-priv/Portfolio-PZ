@@ -623,9 +623,9 @@ Currently, I'm focused on React + Vite projects and expanding my portfolio with 
             "Development of a system for automated dispatch and processing of documents, integrated with eNadawca and municipal systems. Database and UI design and implementation, including logo.",
           improvement:
             "The application automatically registers mail reception, eliminating the need for manual input. It supports mass processing of correspondence (e.g., decisions, reminders) — up to 20,000 documents per month — significantly speeding up administrative work. The system is maintained and regularly updated to meet evolving municipal needs.",
-          images: ["./../assets/images/poczta-1.png"],
+          images: ["/assets/images/poczta-1.png"],
           links: [],
-          icon: "./../assets/icons/PI-icon.png",
+          icon: "/assets/icons/PI-icon.png",
         },
         {
           name: "Data Warehouse",
