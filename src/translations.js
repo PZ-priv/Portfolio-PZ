@@ -230,14 +230,17 @@ const translations = {
             "Zaprojektowanie i wdrożenie kompleksowego systemu Help Desk zintegrowanego z pocztą oraz kalendarzem Teams. Stworzenie bazy danych (projekt + implementacja), logotypu i kompletnego layoutu aplikacji.",
           improvement:
             "System automatycznie odbiera zgłoszenia (mailowe i ręczne), zarządza ich statusem, kategorią i priorytetem. Wprowadzono automatyczne powiadomienia, raportowanie, ewidencję sprzętu oraz kalendarz dostępności, zwiększając przejrzystość i efektywność pracy zespołu wraz z dokumentacją i rozliczaniem klientów i pracowników.",
-          images: ["/images/helpdesk-2.png", "/images/helpdesk-3.png"],
+          images: [
+            "./../assets/images/helpdesk-2.png",
+            "./../assets/images/helpdesk-3.png",
+          ],
           links: [
             {
               label: "Post na LinkedIn",
               url: 'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7333078042837200896?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Osadzona publikacja',
             },
           ],
-          icon: "/icons/helpdesk-icon.png",
+          icon: "./../assets/icons/helpdesk-icon.png",
         },
         {
           name: "Hurtownia danych + System WMS",
@@ -289,9 +292,9 @@ const translations = {
             "Stworzenie systemu do automatycznego nadawania i przetwarzania dokumentów, zintegrowanego z eNadawcą oraz systemami urzędu. Zaprojektowanie i implementacja bazy danych oraz interfejsu użytkownika wraz z logotypem.",
           improvement:
             "Aplikacja automatycznie rejestruje odbiór przesyłek, eliminując konieczność ręcznego wprowadzania danych. Pozwala na masową obsługę korespondencji (np. decyzji, upomnień) — nawet do 20 000 dokumentów miesięcznie, przyspieszono pracę działu administracyjnego. System jest utrzymywany i regularnie aktualizowany, by spełniać zmieniające się potrzeby urzędu.",
-          images: ["/images/poczta-1.png"],
+          images: ["./../assets/images/poczta-1.png"],
           links: [],
-          icon: "/icons/PI-icon.png",
+          icon: "./../assets/icons/PI-icon.png",
         },
         {
           name: "Hurtownia danych",
@@ -558,14 +561,17 @@ Currently, I'm focused on React + Vite projects and expanding my portfolio with 
             "Design and implementation of a comprehensive Help Desk system integrated with email and Microsoft Teams calendar. Creation of the database (design + implementation), logo, and full application layout.",
           improvement:
             "The system automatically receives requests (email and manual), manages their status, category, and priority. Automatic notifications, reporting, equipment records, and availability calendar were introduced — improving clarity and team efficiency alongside documentation and client/employee billing.",
-          images: ["/images/helpdesk-2.png", "/images/helpdesk-3.png"],
+          images: [
+            "./../assets/images/helpdesk-2.png",
+            "./../assets/images/helpdesk-3.png",
+          ],
           links: [
             {
               label: "LinkedIn Post",
               url: 'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7333078042837200896?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post',
             },
           ],
-          icon: "/icons/helpdesk-icon.png",
+          icon: "./../assets/icons/helpdesk-icon.png",
         },
         {
           name: "Data Warehouse + WMS System",
@@ -617,9 +623,9 @@ Currently, I'm focused on React + Vite projects and expanding my portfolio with 
             "Development of a system for automated dispatch and processing of documents, integrated with eNadawca and municipal systems. Database and UI design and implementation, including logo.",
           improvement:
             "The application automatically registers mail reception, eliminating the need for manual input. It supports mass processing of correspondence (e.g., decisions, reminders) — up to 20,000 documents per month — significantly speeding up administrative work. The system is maintained and regularly updated to meet evolving municipal needs.",
-          images: ["/images/poczta-1.png"],
+          images: ["./../assets/images/poczta-1.png"],
           links: [],
-          icon: "/icons/PI-icon.png",
+          icon: "./../assets/icons/PI-icon.png",
         },
         {
           name: "Data Warehouse",
