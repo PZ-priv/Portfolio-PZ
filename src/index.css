@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #00060b, #1a1a1a);
+  color: #efd297;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+overflow: hidden;
+  /* cursor: url("../gold-cursor.png") 0 0, auto; */
+}
+
+/* Styl scrolla dla Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a67a41;
+  background-color: pink;
+  border-radius: 4px;
+  border: 2px solid #1a1a1a;
+}
+
+/* Styl scrolla dla Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #a67a41 #1a1a1a;
+}
+
+body::-webkit-scrollba {
+  display: none;
+  width: 0px;
+}
+
+main::-webkit-scrollbar-thumb {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+header,
+.section {
+  scroll-snap-align: start;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #00060b, #1a1a1a);
+  border-bottom: 2px solid #a67a41;
+  animation: fadeIn 2s ease forwards;
+  height: 90vh;
+}
+
+.logo-container {
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 2.5em;
+  font-weight: 700;
+  background: linear-gradient(to right, #efd297, #ffeabd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  font-weight: 300;
+  background: linear-gradient(to right, #efd297, #a67a41);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-gradient {
+  background: linear-gradient(to right, #00060b, #1a1a1a);
+}
+
+header,
+nav,
+.section,
+footer {
+  animation: fadeIn 2s ease forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn2 1s ease-out forwards;
+}
+
+main {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow: hidden;
+
+}
+
+main {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  /* Ukrycie scrolla */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE/Edge */
+}
+
+main::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari */
+}
+
+.section,
+header {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+/* Swiper custom styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #b2874a !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: white !important;
+}
+
+.swiper-pagination-bullet {
+  background: #b2874a !important;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #b2874a #0b0b0b;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #b2874a;
+  border-radius: 4px;
+  border: 2px solid #0b0b0b;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .name {
+    font-size: 2em;
+  }
+  .subtitle {
+    font-size: 1em;
+  }
+}
