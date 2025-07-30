@@ -18,7 +18,7 @@ const Header = ({ t }) => {
         />
       </div>
       <img
-        src="/pz.png"
+        src={"./pz.png"}
         alt={t.imgAlt}
         className="logo"
         style={{
