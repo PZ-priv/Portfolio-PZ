@@ -5,7 +5,7 @@ const Header = ({ t }) => {
     <header id="header">
       <div className="logo-container">
         <img
-          src="/logo.png"
+          src={"./logo.png"}
           alt={t.imgAlt}
           className="logo"
           style={{
