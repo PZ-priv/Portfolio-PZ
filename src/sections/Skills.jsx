@@ -55,7 +55,10 @@ const Skills = ({ t }) => {
   }, {});
 
   return (
-    <section id="skills" className="text-#a67a41 py-17 px-6 md:px-12 section">
+    <section
+      id="skills"
+      className="text-#a67a41 py-17 px-6 md:px-12 section  max-h-[80vh] overflow-y-auto md:max-h-none md:overflow-visible"
+    >
       <h2 className="text-3xl md:text-4xl font-bold text-[#b2874a] mb-12 text-center">
         {t.title}
       </h2>
@@ -64,7 +67,7 @@ const Skills = ({ t }) => {
         ref={hoverAreaRef}
       >
         {/* LEWA STRONA – lista technologii */}
-        <div className="max-h-[calc(40vh-10rem)] w-100% md:w-1/2 md:max-h-[calc(90vh-10rem)] overflow-y-auto pr-2">
+        <div className="max-h-[calc(40vh-10rem)] w-100% md:w-1/2 md:max-h-[calc(90vh-10rem)] overflow-y-auto pr-2 min-h-[200px]">
           {Object.entries(grouped).map(([category, techs]) => (
             <div key={category} className="mb-8">
               <h3 className="text-xl font-semibold text-[#ffeabd] mb-2">
